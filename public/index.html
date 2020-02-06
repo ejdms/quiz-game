@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="gameNotOver">
+        <h1 id="mainText">
+          Ilość poprawnych odpowiedzi: <span id="correctNumber">0</span>
+        </h1>
+        <div id="questionField"></div>
+        <div class="answers">
+          <button id="answer1"></button>
+          <button id="answer2"></button>
+          <button id="answer3"></button>
+          <button id="answer4"></button>
+        </div>
+        <div class="help">
+          <button id="call">Call to a friend</button>
+          <button id="half">50 / 50</button>
+          <button id="crowd">Question to the crowd</button>
+        </div>
+      </div>
+      <div id="gameOver">
+        <div id="text"></div>
+        <button id="reset">Reset</button>
+      </div>
+    </div>
+    <div class="modal call-modal">
+      <div class="close-modal">X</div>
+      <h1 id="helpCallText"></h1>
+    </div>
+    <div class="modal crowd-modal">
+      <div class="close-modal">X</div>
+      <div class="chart"></div>
+    </div>
+    <div class="overlay"></div>
+    <script src="./js.js"></script>
+  </body>
+</html>
